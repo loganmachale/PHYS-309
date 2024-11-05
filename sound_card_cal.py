@@ -14,17 +14,17 @@ def importWAV(filename):
     return time,data
 
 # SC Data imports
-v_100 = importWAV('40mV_100Hz.wav')
-v_500 = importWAV('40mV_500Hz.wav')
-v_1k = importWAV('40mV_1kHz.wav')
-v_2k = importWAV('40mV_2kHz.wav')
-v_4k = importWAV('40mV_4kHz.wav')
-v_6k = importWAV('40mV_6kHz.wav')
-v_8k = importWAV('40mV_8kHz.wav')
-v_11k = importWAV('40mV_11kHz.wav')
-v_13k = importWAV('40mV_13kHz.wav')
-v_15k = importWAV('40mV_15kHz.wav')
-v_18k = importWAV('40mV_18kHz.wav')
+v_100 = importWAV('Calibration Signals/40mV_100Hz.wav')
+v_500 = importWAV('Calibration Signals/40mV_500Hz.wav')
+v_1k = importWAV('Calibration Signals/40mV_1kHz.wav')
+v_2k = importWAV('Calibration Signals/40mV_2kHz.wav')
+v_4k = importWAV('Calibration Signals/40mV_4kHz.wav')
+v_6k = importWAV('Calibration Signals/40mV_6kHz.wav')
+v_8k = importWAV('Calibration Signals/40mV_8kHz.wav')
+v_11k = importWAV('Calibration Signals/40mV_11kHz.wav')
+v_13k = importWAV('Calibration Signals/40mV_13kHz.wav')
+v_15k = importWAV('Calibration Signals/40mV_15kHz.wav')
+v_18k = importWAV('Calibration Signals/40mV_18kHz.wav')
 
 t_100 = v_100[0]
 t_500 = v_500[0]
@@ -65,7 +65,7 @@ C_arr = np.array([])
 C_std_arr = np.array([])
 
 for v, f, V_amp in zip(v_arr, sc_f_arr, V_amp_arr):
-    n = round(3 * f)
+    n = round(2 * f)
     v_c = np.copy(v)
     v_sorted = np.sort(v_c)
     amps = (v_sorted[(-n - 1): -51] - v_sorted[50: n]) / 2
