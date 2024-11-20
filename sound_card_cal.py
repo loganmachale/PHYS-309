@@ -38,7 +38,8 @@ t_13k = v_13k[0]
 t_15k = v_15k[0]
 t_18k = v_18k[0]
 
-t_arr = np.array([t_100, t_500, t_1k, t_2k, t_4k, t_6k, t_8k, t_11k, t_13k, t_15k, t_18k])
+t_arr = np.array([t_100, t_500, t_1k, t_2k, t_4k, t_6k, t_8k, t_11k,
+                  t_13k, t_15k, t_18k,], dtype=object)
 
 v_100 = v_100[1]['right']
 v_500 = v_500[1]['right']
@@ -52,7 +53,8 @@ v_13k = v_13k[1]['right']
 v_15k = v_15k[1]['right']
 v_18k = v_18k[1]['right']
 
-v_arr = np.array([v_100, v_500, v_1k, v_2k, v_4k, v_6k, v_8k, v_11k, v_13k, v_15k, v_18k])
+v_arr = np.array([v_100, v_500, v_1k, v_2k, v_4k, v_6k, v_8k, v_11k,
+                  v_13k, v_15k, v_18k], dtype=object)
 
 sc_f_arr = np.array([1E2, 5E2, 1E3, 2E3, 4E3, 6E3, 8E3, 11E3, 13E3, 15E3, 18E3])
 
